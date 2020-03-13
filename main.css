@@ -1,0 +1,108 @@
+.rubl {
+font-family: 'PT Sans', serif;
+}
+body, .game_block {
+     font-family: cursive;
+     display: flex;
+     justify-content: center;
+     align-content: space-between;
+     align-items: center;
+     flex-direction: column;
+     background: #AEABB6;
+}
+.main {
+     display: flex;
+     flex-direction: column;
+}
+header, section, footer {
+     width: 1200px;
+}
+
+
+
+.base, .active_passive {
+     display: flex;
+     flex-direction: row;
+}
+
+header, .active, .passive, .potok, .game_block, .income, .outlay, footer {
+     margin: 3px;
+     border: 3px solid black;
+     border-radius: 10px;
+     background: #fff;
+     min-height: 70px;
+}
+.income, .outlay {
+     background: #D4D1DC;
+}
+.potok {
+     min-height: 0px;
+     height: auto;
+}
+header, footer {
+     min-height: 70px;
+     background: #26232E;
+     color: #FFF;
+     border: 3px solid #FFF;
+}
+header {
+     display: flex;
+     flex-direction: row;
+     height: 100px;
+     position: relative;
+}
+header .header_btn {
+     margin-top: 13px;
+     margin-right: 13px;
+     background: #A29FAA;
+     border: 3px solid #D4D1DC;
+     border-radius: 4px;
+     padding: 4px;
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     right: 0;
+}
+header .header_btn:hover {
+     background: #CCC9D4;
+     border: 3px solid #FFF;
+     cursor: pointer;
+}
+header .sells {right: 88px;}
+header .stock_exchange {right: 174px;}
+header .bankomat {right: 262px;}
+
+
+header img {
+     width: 60px;
+     height: 60px;
+}
+header img:hover {
+     -webkit-filter: saturate(200%);
+     filter: saturate(200%);
+}
+.income_outlay {
+     min-width: 300px;
+     width: 30%;
+}
+.game_block {
+     width: 70%;
+     min-height: 464px;
+     background: #fff;
+}
+
+.active, .passive {
+     width: 50%;
+}
+.passive_bank {
+     width: 100%;
+}
+.passive_bank .text {
+     font-size: 12px;
+}
+.pole_bank_shot {
+     width: 20%;
+}
+.pole_bank_big {
+     width: 40%;
+}

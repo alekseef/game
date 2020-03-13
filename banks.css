@@ -1,0 +1,187 @@
+.bank {
+     border: 3px solid #3C3B37;
+     border-radius: 5px;
+     padding: 20px;
+     background: #FFF;
+     margin: 0px 20px;
+     margin-bottom: 18px;
+}
+.input_bank {
+     border: 3px solid #5E5F65;
+     border-radius: 5px;
+     padding: 8px;
+     font-size: 18px;
+     box-shadow:
+      0 1px rgba(255,255,255,.2) inset,
+      0 3px 5px rgba(0,1,6,.5),
+      0 0 1px 1px rgba(0,1,6,.2);
+}
+.center {
+     display: flex;
+      justify-content: center;
+      align-content: space-between;
+      align-items: center;
+      flex-direction: column;
+}
+#bank_form {
+     min-height: 50px;
+
+}
+#bank_form font {
+     margin-left: 5px;
+     font-size: 20px;
+     color: #5E5F65;
+}
+.bank_diolog {
+     display: flex;
+     flex-direction: row;
+     height: 100px;
+}
+.diolog_text {
+     display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+     border-radius: 15px;
+     background: #FFF;
+     color: #6A6772;
+     padding: 20px 10px;
+     font-size: 15px;
+     width: 370px;
+     margin-left: 30px;
+     margin-top: 5px;
+     margin-bottom: 10px;
+     line-height: 1.4;
+}
+
+.bank_diolog img {
+     height: 100px;
+     width: 140px;
+     position: absolute;
+     right: 30px;
+}
+#img_diolog {
+     right: 140px;
+     top: 70px;
+     height: 30px;
+     width: 50px;
+}
+.img_bank {
+     margin-top: -140px;
+     width: 120%;
+     margin-left: -60px;
+}
+.bank_mini_text {
+     margin-top: 4px;
+}
+.bank h3 {
+     color: #696B72;
+}
+.not_show {
+     opacity: 0;
+     display:none;
+}
+
+
+.tabs_bank {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+}
+.tabs_bank>div {
+	display: none;
+	padding: 15px 25px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.tabs_bank>div>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs_bank>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs_bank>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+     width: 202px;
+     font-size: 22px;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs_bank>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs_bank>input:checked+label {
+	color: #3D3C38;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+	.tabs_bank>label {
+		font-size: 0;
+	}
+	.tabs_bank>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs_bank>label {
+		padding: 15px;
+	}
+}

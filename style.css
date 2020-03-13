@@ -1,0 +1,144 @@
+header .my_money {
+     margin-top: 20px;
+     margin-left: 20px;
+     font-size: 26px;
+     text-transform: uppercase;
+}
+.header_text, .header_potok {
+     background: #D4D1DC;
+     color: #403D48;
+     border-radius: 7px 7px 0 0;
+     padding: 6px;
+     padding-top: 3px;
+     font-size: 20px;
+}
+.header_potok {
+     border-radius: 7px 7px 7px 7px;
+     padding: 10px;
+     font-size: 22px;
+}
+.header_money {
+     padding-left: 10px;
+}
+.text, .money {
+     padding: 4px;
+     border: 1px solid #AEABB6;
+}
+.money {
+     text-align: right;
+     padding-right: 10px;
+}
+.poles {
+     display: flex;
+     flex-direction: row;
+     border: 1px solid #AEABB6;
+     margin-bottom: 3px;
+     margin-left: 3px;
+     margin-right: 3px;
+}
+.pole {
+     width: 17%;
+}
+.pole_big {
+     width: 25%;
+}
+.pole_2 {
+     width: 20%;
+}
+.pole_2_big {
+     width: 40%;
+}
+.pole_name {
+     width: 70%;
+     background: #FFF;
+}
+.pole_money {
+     width: 30%;
+     background: #FFF;
+}
+.red {color: red;}
+.green {color: #3CBD3F;}
+.text_t {
+     padding-left: 5px;
+}
+.passive_bank .pole_bank_big .text:hover {
+     background: red;
+     cursor: pointer;
+}
+.passive_bank .pole_bank_big .text:active {
+
+}
+
+
+
+
+
+
+
+
+
+
+.container{
+     margin: 0 auto;
+}
+.line {
+     height:26px;
+     width:100%;
+     background:rgb(50,80,50);
+     border:2px solid #dddddd;
+     border-radius:2px;
+     box-shadow:0px 5px 5px 3px rgba(0,0,0,0.3);
+     overflow:hidden;
+     position:relative;
+     display:block;
+}
+.line .line_text{
+     font-size:24px;
+     font-family: franklin gothic medium;/* color:#00ff00; */
+     width:120%;
+     height:100%;
+     position:absolute;
+     z-index:1;
+     margin-top: -1px;
+     font-weight:bold;
+     /* -webkit-animation: l1_animation 20s linear infinite;
+     -moz-animation: l1_animation 20s linear infinite; */
+}
+.line .line_cover{
+     width:100%;
+     height:100%;
+     position:absolute;
+     z-index:2;
+     background:url(img/led_bg.png);
+     background-size: 3px;
+}
+@-webkit-keyframes l1_animation {
+     0%{left:100%;}
+     100%{left:-100%;}
+}
+@-moz-keyframes l1_animation {
+     0%{left:100%;}
+     100%{left:-100%;}
+}
+#led {
+     display: flex;
+     flex-direction: row;
+}
+.rate {
+     position: absolute;
+     display: flex;
+     flex-direction: row;
+}
+.rate_name {
+     color:#FFF;
+}
+.rate_value {
+     margin-left: 5px;
+     color:#FFF;
+}
+.rate_color_green {
+     color:#00ff00;
+}
+.rate_color_red {
+     color:red;
+}
